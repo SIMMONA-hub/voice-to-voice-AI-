@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎤 Голосовой чат</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎤 Голосовой чат с ИИ</h1>
+            <p>Говорите естественно и получайте ответы голосом!</p>
+        </header>
+        
+        <div class="status-section">
+            <div class="status" id="status">
+                <span class="status-indicator"></span>
+                <span id="statusText">Подключение...</span>
+            </div>
+        </div>
+        
+        <div class="controls-section">
+            <div class="controls">
+                <button id="startBtn" class="btn primary">
+                    🎤 Начать слушать
+                </button>
+                <button id="stopBtn" class="btn secondary" disabled>
+                    ⏹️ Остановить
+                </button>
+            </div>
+        </div>
+        
+        <div class="visualizer-section">
+            <div class="audio-visualizer">
+                <canvas id="visualizer" width="400" height="100"></canvas>
+                <p class="visualizer-label">Уровень звука</p>
+            </div>
+        </div>
+        
+        <div class="chat-section">
+            <div class="chat-container">
+                <div id="messages" class="messages">
+                    <div class="message system">
+                        <div class="message-content">
+                            👋 Добро пожаловать! Нажмите "Начать слушать" для начала голосового разговора.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="instructions">
+            <h3>Как пользоваться:</h3>
+            <ol>
+                <li>Нажмите кнопку "Начать слушать"</li>
+                <li>Говорите четко в микрофон</li>
+                <li>Нажмите "Остановить" когда закончите</li>
+                <li>Ждите ответ ИИ с голосом!</li>
+            </ol>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
